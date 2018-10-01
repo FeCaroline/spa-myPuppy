@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <link rel="stylesheet" href="./dist/style/style.css">
+  <title>My Puppy Pet - Pet Shop</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="../dist/img/puppy.jpg" alt=" " width="80">
+      <a class="navbar-brand" href="/">My Puppy Pet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/" id="home">Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link" href="/product" id="find-product">Produtos</a>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="shoppingCart" type="button" name="button">Meu Carrinho</button>
+        </nav>
+        <div id="result"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <div class="col-sm-1"></div>
+    <main class="col-sm-12" id="result-search">
+      <div class="d-flex justify-content-center mb-3 ">
+        <img src="dist/img/pec.jpg" class="img-fluid" alt="Responsive image" id="puppy" width="300" height="400">
+      </div>
+    </main>
+
+    <div class="col-sm-1"></div>
+  </section>
+
+
+  <!-- modal fale conosco -->
+
+  <div class="modal fade" id="modalMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fale Conosco - My Puppy Pet</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <label for="recipient-name" class="col-form-label">Telefone:</label>
+              <label for="recipient-name" class="col-form-label">CEP:</label>
+              <label for="recipient-name" class="col-form-label">Endereço:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Assunto:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mensagem:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+    <footer class="bg-light text">
+    <div class="row">
+      <div class="col-12 col-md">
+
+          <small class="text-muted">    My Puppy Pet &copy;2018</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Institucional</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="#">Sobre o My Puppy Pet</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Políticas de Entrega</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Trocas e Devoluções</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Pagamentos e Reembolso</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Política de Privacidade</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Trabalhe Conosco</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>No My Puppy Pet</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="#">Nossas Lojas</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Fidelidade My Puppy Pet</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Fale Conosco</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Assinatura My Puppy Pet</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Redes Sociais</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="#"></i>Facebook</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Youtube</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="dist/routes.js"></script>
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
